@@ -7,3 +7,6 @@
 [submodule "bundle/file-line"]
 	path = bundle/file-line
 	url = git@github.com:bogado/file-line.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = git@github.com:vim-scripts/taglist.vim.git
