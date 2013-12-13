@@ -5,6 +5,18 @@ Make sure that the ~/.vimrc contains only the following
 " load from ~/.vim/vimrc
 runtime vimrc
 
+clone the vim git module
+TODO: add path
+
+
+- build command-t
+sudo aptitude install ruby-dev
+cd ~/.vim/bundle/command-t/ruby/command-t; \
+ruby extconf.rb; \
+make; \
+cd -
+
+
 UPDATE PATHOGEN
 -----------------
 https://github.com/tpope/vim-pathogen
