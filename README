@@ -1,0 +1,14 @@
+INSTALL
+-------
+Make sure that the ~/.vimrc contains only the following
+
+" load from ~/.vim/vimrc
+runtime vimrc
+
+UPDATE PATHOGEN
+-----------------
+https://github.com/tpope/vim-pathogen
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+curl -Sso ~/.vim/autoload/pathogen.vim \
+    https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
