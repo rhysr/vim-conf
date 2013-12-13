@@ -12,3 +12,11 @@ https://github.com/tpope/vim-pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -Sso ~/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+Installing Plugins
+------------------
+
+ git submodule add <URL> bundle/<plugin-name>
+
+
+ e.g.  git submodule add git://github.com/tpope/vim-sensible.git bundle/vim-sensible 
