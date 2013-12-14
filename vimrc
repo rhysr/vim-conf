@@ -104,6 +104,7 @@ map <C-l> <C-w>l
 if has ("autocmd")
     autocmd BufWritePre *.php,*.js,*.twig :call Preserve("%s/\\s\\+$//e")
     autocmd BufWritePre $HOME/repos/*,/var/repos/* :call Preserve("%s/\\s\\+$//e")
+    autocmd BufWritePre *.clj :call Preserve("%s/\\s\\+$//e")
 endif
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 
