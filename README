@@ -5,8 +5,13 @@ Make sure that the ~/.vimrc contains only the following
 " load from ~/.vim/vimrc
 runtime vimrc
 
-clone the vim git module
-TODO: add path
+clone this vim git repo
+
+run the following
+
+git submodule init
+git submodule update
+git submodule foreach git checkout master
 
 
 - build command-t
@@ -32,3 +37,9 @@ Installing Plugins
 
 
  e.g.  git submodule add git://github.com/tpope/vim-sensible.git bundle/vim-sensible 
+
+ Updating plugins
+-------------------
+
+git submodule foreach git pull
+
