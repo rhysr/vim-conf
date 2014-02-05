@@ -77,6 +77,21 @@ snippet zfvalidator
 		}
 	}
 
+snippet zffilter
+	<?php
+	namespace ${1:namespace};
+
+	use Zend\Filter\FilterInterface;
+
+	class ${2} implements FilterInterface
+	{
+		public function filter($value)
+		{
+			${3}
+		}
+	}
+
+
 snippet setter
 	public function set${1:ParamName}($${2:paramName})
 	{
