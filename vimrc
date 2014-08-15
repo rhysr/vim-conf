@@ -164,6 +164,7 @@ let g:SuperTabDefaultCompletionType = "context"
 """"""""""""
 
 let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
+let g:syntastic_puppet_puppetlint_args='--no-80chars-check --no-class_parameter_defaults-check --no-class_inherits_from_params_class-check'
 
 let g:DisableAutoPHPFolding = 1
 let php_folding=0 
