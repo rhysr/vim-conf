@@ -15,8 +15,7 @@ set expandtab
 
 set cindent        "indent inside braces basically
 set smartindent
-set autoindent
-
+set autoindent 
 set history=1000
 
 " command tab completion
@@ -144,6 +143,7 @@ if has("autocmd")
     autocmd BufRead,BufNewFile $HOME/repos/*,/var/repos/* let tlist_php_settings = 'php;c:class;f:function;d:constant'
     " autocmd BufRead,BufNewFile $HOME/repos/* let Tlist_Ctags_Cmd = 'ctags --options=$HOME/.vim/ctags'
     autocmd BufWritePost $HOME/repos/*,/var/repos/* :TlistUpdate
+    autocmd BufRead,BufNewFile $HOME/repos/logstash-conf/components/*conf set ft=logstash
 endif
 
 " BufExplorer
@@ -186,4 +186,5 @@ let php_alt_comparisons=1
 if has("autocmd")
     "php autocomplete method
     autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+    autocmd Filetype puppet setlocal tabstop=2 shiftwidth=2 softtabstop=2
 endif

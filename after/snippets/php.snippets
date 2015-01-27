@@ -116,3 +116,19 @@ snippet getset
 	{
 		return $this->$2;
 	}
+snippet zftest
+	<?php
+	namespace ${1:namespace};
+
+	use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+
+	class ${2}Test extends AbstractHttpControllerTestCase
+	{
+		public function setUp()
+		{
+			$this->setApplicationConfig(
+				include '${3}'
+			);
+			parent::setUp();
+		}
+	}
