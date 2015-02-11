@@ -49,3 +49,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/php-explorer"]
+	path = bundle/php-explorer
+	url = git@10.22.12.254:php-explorer
