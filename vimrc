@@ -193,3 +193,10 @@ if has("autocmd")
     autocmd FileType php set omnifunc=phpcomplete#CompletePHP
     autocmd Filetype puppet setlocal tabstop=2 shiftwidth=2 softtabstop=2
 endif
+
+
+autocmd BufRead,BufNewFile riemann.config setlocal filetype=clojure
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
