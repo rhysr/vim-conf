@@ -196,6 +196,7 @@ if has("autocmd")
     "php autocomplete method
     autocmd FileType php set omnifunc=phpcomplete#CompletePHP
     autocmd Filetype puppet setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
 endif
 
 
