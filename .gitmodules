@@ -58,3 +58,6 @@
 [submodule "bundle/rainbow-parentheses"]
 	path = bundle/rainbow-parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "bundle/vim-syntax-vcl"]
+	path = bundle/vim-syntax-vcl
+	url = https://github.com/pld-linux/vim-syntax-vcl.git
