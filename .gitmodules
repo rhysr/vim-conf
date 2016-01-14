@@ -61,3 +61,6 @@
 [submodule "bundle/vim-syntax-vcl"]
 	path = bundle/vim-syntax-vcl
 	url = https://github.com/pld-linux/vim-syntax-vcl.git
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git
