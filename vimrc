@@ -196,6 +196,7 @@ if has("autocmd")
     autocmd Filetype puppet setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd Filetype jade setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype groovy setlocal tabstop=2 shiftwidth=2 softtabstop=2
 endif
 
 

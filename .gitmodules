@@ -67,3 +67,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/groovyindent-unix"]
+	path = bundle/groovyindent-unix
+	url = https://github.com/vim-scripts/groovyindent-unix.git
