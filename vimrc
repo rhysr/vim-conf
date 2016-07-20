@@ -28,6 +28,7 @@ set listchars=tab:\|·,trail:·
 
 nmap <leader>l :set list!<CR> " Shortcut to rapidly toggle `set list`
 
+set undofile "persistent undo between opening and closing vim
 set hid "Hide abandon buffers in order to not lose undo history.
 
 set incsearch "search as you type
