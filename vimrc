@@ -108,6 +108,7 @@ if has ("autocmd")
     autocmd BufWritePre *.php,*.js,*.twig,*.pp,*.rb,*.jade :call Preserve("%s/\\s\\+$//e")
     autocmd BufWritePre $HOME/repos/*,/var/repos/* :call Preserve("%s/\\s\\+$//e")
     autocmd BufWritePre *.clj :call Preserve("%s/\\s\\+$//e")
+    autocmd FileType diff let b:noStripWhitespace=1
 endif
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 
@@ -122,6 +123,9 @@ nmap _= :call Preserve("normal gg=G")<CR>
 
 " http://technotales.wordpress.com/2010/03/31/preserve-a-vim-function-that-keeps-your-state/
 function! Preserve(command)
+  if exists('b:noStripWhitespace')
+    return
+  endif
   " Preparation: save last search, and cursor position.
   let _s=@/
   let l = line(".")
