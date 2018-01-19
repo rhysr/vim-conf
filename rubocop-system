@@ -1,3 +1,10 @@
 #!/bin/bash
+#IFS=$'\n\t'
 
-rvm system do rubocop -D "$@"
+
+echo "$PWD"
+which bundle
+source ~/.rvm/bin/rvm
+bundle exec rubocop -D "$@"
+
+#rvm system do rubocop -D "$@"

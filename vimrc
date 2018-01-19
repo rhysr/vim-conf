@@ -52,6 +52,11 @@ nnoremap <silent> <Leader>/ :nohlsearch<CR>
 " spell check git commit messages
 autocmd FileType gitcommit setlocal spell
 
+" allow reading editor config from file
+set nocompatible 
+set modeline 
+set modelines=1
+
 """"""""""""""""""""
 "    Colours
 """"""""""""""""""""
@@ -152,6 +157,9 @@ if has("autocmd")
     " autocmd BufRead,BufNewFile $HOME/repos/* let Tlist_Ctags_Cmd = 'ctags --options=$HOME/.vim/ctags'
     autocmd BufWritePost $HOME/repos/*,/var/repos/* :TlistUpdate
     autocmd BufRead,BufNewFile $HOME/repos/logstash-conf/components/*conf set ft=logstash
+    autocmd BufRead,BufNewFile $HOME/repos/**/Jenkinsfile set ft=groovy
+    autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
+
 endif
 
 " BufExplorer
@@ -174,7 +182,9 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
 let g:syntastic_puppet_puppetlint_args='--no-80chars-check --no-class_inherits_from_params_class-check'
 
-let g:syntastic_ruby_rubocop_exec = '~/.vim/rubocop-system'
+"let g:syntastic_ruby_rubocop_exec = '~/.vim/rubocop-system'
+"let g:syntastic_ruby_rubocop_exec = '~/.vim/rubocop-system'
+let g:syntastic_ruby_rubocop_exec = 'bundle exec rubocop'
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 
 
@@ -210,3 +220,10 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" https://stackoverflow.com/questions/26518938/vim-wrong-syntax-highlighting-in-groovy#comment66713285_26525247
+syn region groovyString           start='/[^ \*/]'  end='/' contains=groovySpecialChar,groovyRegexChar,groovyELExpr
+
+" https://stackoverflow.com/questions/4331776/change-vim-swap-backup-undo-file-name
+set dir=~/.vimswap//,/var/tmp//,/tmp//,.
+
