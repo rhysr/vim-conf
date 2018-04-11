@@ -1,6 +1,28 @@
-" enable pathogen for managing plugins using git submodules
-execute pathogen#infect()
-execute pathogen#helptags()
+" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'bling/vim-airline'
+Plug 'bogado/file-line'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'garbas/vim-snipmate'
+Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja' }
+Plug 'godlygeek/tabular'
+Plug 'groenewege/vim-less', { 'for': 'lessc' }
+Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
+Plug 'honza/vim-snippets'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'pld-linux/vim-syntax-vcl', { 'for': 'varnish' }
+Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
+Plug 'scrooloose/syntastic'
+Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/groovyindent-unix'
+Plug 'vim-scripts/taglist.vim'
+call plug#end()
 
 """"""""""""""""""""""""
 "     Editor Settings
