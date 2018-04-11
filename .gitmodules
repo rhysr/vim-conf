@@ -46,9 +46,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/php-explorer"]
-	path = bundle/php-explorer
-	url = https://github.com/PhilGrayson/php-explorer.git
 [submodule "bundle/rainbow-parentheses"]
 	path = bundle/rainbow-parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim.git
