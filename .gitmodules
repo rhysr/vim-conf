@@ -1,9 +1,6 @@
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = https://github.com/wincent/Command-T.git
 [submodule "bundle/file-line"]
 	path = bundle/file-line
 	url = https://github.com/bogado/file-line.git
