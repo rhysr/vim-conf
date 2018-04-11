@@ -186,6 +186,8 @@ let g:syntastic_puppet_puppetlint_args='--no-80chars-check --no-class_inherits_f
 "let g:syntastic_ruby_rubocop_exec = '~/.vim/rubocop-system'
 let g:syntastic_ruby_rubocop_exec = 'bundle exec rubocop'
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+let g:syntastic_javascript_checkers = ['jshint', 'eslint']
+
 
 
 let g:DisableAutoPHPFolding = 1
