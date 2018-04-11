@@ -49,9 +49,6 @@
 [submodule "bundle/php-explorer"]
 	path = bundle/php-explorer
 	url = https://github.com/PhilGrayson/php-explorer.git
-[submodule "bundle/ag-vim"]
-	path = bundle/ag-vim
-	url = https://github.com/rking/ag.vim.git
 [submodule "bundle/rainbow-parentheses"]
 	path = bundle/rainbow-parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim.git
