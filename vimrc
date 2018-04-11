@@ -49,6 +49,8 @@ nnoremap g# g#zz
 " hide search highlights
 nnoremap <silent> <Leader>/ :nohlsearch<CR>
 
+set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P "Status line
+
 " spell check git commit messages
 autocmd FileType gitcommit setlocal spell
 
