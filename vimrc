@@ -204,6 +204,7 @@ let g:SuperTabDefaultCompletionType = "context"
 
 let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
 let g:syntastic_puppet_puppetlint_args='--no-80chars-check --no-class_inherits_from_params_class-check'
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd', 'phpstan']
 
 "let g:syntastic_ruby_rubocop_exec = '~/.vim/rubocop-system'
 "let g:syntastic_ruby_rubocop_exec = '~/.vim/rubocop-system'
