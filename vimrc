@@ -13,6 +13,7 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'pld-linux/vim-syntax-vcl', { 'for': 'varnish' }
+Plug 'robbles/logstash.vim'
 Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
 Plug 'scrooloose/syntastic'
 Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
