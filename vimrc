@@ -12,6 +12,8 @@ Plug 'honza/vim-snippets'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 Plug 'pld-linux/vim-syntax-vcl', { 'for': 'varnish' }
 Plug 'robbles/logstash.vim'
 Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
@@ -238,6 +240,7 @@ if has("autocmd")
     autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd Filetype jade setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd Filetype groovy setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype javascript.jsx setlocal tabstop=2 shiftwidth=2 softtabstop=2
 endif
 
 
