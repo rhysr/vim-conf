@@ -18,7 +18,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'pld-linux/vim-syntax-vcl', { 'for': 'varnish' }
 Plug 'robbles/logstash.vim'
 Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
-Plug 'scrooloose/syntastic'
 Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fugitive'
@@ -26,6 +25,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/groovyindent-unix'
 Plug 'vim-scripts/taglist.vim'
+Plug 'w0rp/ale'
 call plug#end()
 
 """"""""""""""""""""""""
@@ -201,20 +201,6 @@ endif
 " Supertab
 """"""""""
 let g:SuperTabDefaultCompletionType = "context"
-
-" Syntastic
-""""""""""""
-
-let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
-let g:syntastic_puppet_puppetlint_args='--no-80chars-check --no-class_inherits_from_params_class-check'
-let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd', 'phpstan']
-
-"let g:syntastic_ruby_rubocop_exec = '~/.vim/rubocop-system'
-"let g:syntastic_ruby_rubocop_exec = '~/.vim/rubocop-system'
-let g:syntastic_ruby_rubocop_exec = 'bundle exec rubocop'
-let g:syntastic_ruby_checkers = ['rubocop', 'mri']
-let g:syntastic_javascript_checkers = ['jshint', 'eslint']
-
 
 
 let g:DisableAutoPHPFolding = 1
