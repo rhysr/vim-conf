@@ -255,4 +255,4 @@ syn region groovyString           start='/[^ \*/]'  end='/' contains=groovySpeci
 
 " https://stackoverflow.com/questions/4331776/change-vim-swap-backup-undo-file-name
 set dir=~/.vimswap//,/var/tmp//,/tmp//,.
-
+set undodir=~/.vimundo//,/var/tmp//,/tmp//,.
