@@ -26,6 +26,16 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/groovyindent-unix'
 Plug 'vim-scripts/taglist.vim'
 Plug 'w0rp/ale'
+
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 call plug#end()
 
 """"""""""""""""""""""""
@@ -98,6 +108,7 @@ endif
 """"""""""""""""""
 syntax on
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 
 "PHP for non-standard extensions
 if has("autocmd")
@@ -210,6 +221,12 @@ let php_folding=0
 """"""""""""
 let g:CommandTWildIgnore=&wildignore . ",data/**,build/**,bower_components/**,node_modules/**"
 let g:CommandTMaxFiles=30000
+
+
+" Ctrl P
+"""""""""""""""
+let g:ctrlp_custom_ignore = 'node_modules'
+nnoremap <C-b> :CtrlPBuffer<CR>
 
 """""""""""""""""""""
 "      Mess
