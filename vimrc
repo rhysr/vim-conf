@@ -212,6 +212,12 @@ let g:ctrlp_max_files = 80000
 let g:ctrlp_max_depth = 12
 nnoremap <C-b> :CtrlPBuffer<CR>
 
+
+
+" ALE
+"""""""""
+let g:ale_lint_delay=1000
+
 """""""""""""""""""""
 "      Mess
 """"""""""""""""""""
