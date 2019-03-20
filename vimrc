@@ -96,7 +96,7 @@ set t_Co=256
 set background=dark
 colorscheme rhys
 if &diff
-    colorscheme elflord
+    colorscheme industry
 endif
 
 """""""""""""""""""
