@@ -109,7 +109,7 @@ set omnifunc=syntaxcomplete#Complete
 if has("autocmd")
     augroup filetypedetect
         au! BufRead,BufNewFile *.phtml setfiletype php
-        au! BufRead,BufNewFile *.twig setfiletype jinja
+        au! BufRead,BufNewFile riemann.config setlocal filetype=clojure
     augroup END
 endif
 
@@ -137,43 +137,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-""""""""""""""
-" Whitespace
-""""""""""""""
-
-if has ("autocmd")
-    autocmd BufWritePre *.php,*.js,*.twig,*.pp,*.rb,*.jade,*.tf,*.md,*.sh,*.yml,*.yaml,Dockerfile* :call Preserve("%s/\\s\\+$//e")
-    autocmd BufWritePre $HOME/repos/*,/var/repos/* :call Preserve("%s/\\s\\+$//e")
-    autocmd BufWritePre *.clj,*.gradle,*.groovy :call Preserve("%s/\\s\\+$//e")
-    autocmd FileType diff let b:noStripWhitespace=1
-endif
-nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
-
-"""""""""""""
-" formatting
-""""""""""""
-nmap _= :call Preserve("normal gg=G")<CR>
-
-""""""""""""""""""""""
-" Functions 
-""""""""""""""""""""""
-
-" http://technotales.wordpress.com/2010/03/31/preserve-a-vim-function-that-keeps-your-state/
-function! Preserve(command)
-  if exists('b:noStripWhitespace')
-    return
-  endif
-  " Preparation: save last search, and cursor position.
-  let _s=@/
-  let l = line(".")
-  let c = col(".")
-  " Do the business:
-  execute a:command
-  " Clean up: restore previous search history, and cursor position
-  let @/=_s
-  call cursor(l, c)
-endfunction
-
 """"""""""""""""""""""
 "      Plugins
 """"""""""""""""""""""
@@ -197,15 +160,10 @@ endif
 """"""""""
 let g:SuperTabDefaultCompletionType = "context"
 
-
-let g:DisableAutoPHPFolding = 1
-let php_folding=0 
-
 " Command-T
 """"""""""""
 let g:CommandTWildIgnore=&wildignore . ",data/**,build/**,bower_components/**,node_modules/**"
 let g:CommandTMaxFiles=30000
-
 
 " Ctrl P
 """""""""""""""
@@ -214,8 +172,6 @@ let g:ctrlp_max_files = 80000
 let g:ctrlp_max_depth = 12
 nnoremap <C-b> :CtrlPBuffer<CR>
 
-
-
 " ALE
 """""""""
 let g:ale_lint_delay=1000
@@ -223,24 +179,6 @@ let g:ale_lint_delay=1000
 """""""""""""""""""""
 "      Mess
 """"""""""""""""""""
-
-"php syntax highlighting
-let php_sql_query=1
-let php_htmlInStrings=1
-let php_alt_comparisons=1
-
-if has("autocmd")
-    "php autocomplete method
-    autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-    autocmd Filetype puppet setlocal tabstop=2 shiftwidth=2 softtabstop=2
-    autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
-    autocmd Filetype jade setlocal tabstop=2 shiftwidth=2 softtabstop=2
-    autocmd Filetype groovy setlocal tabstop=2 shiftwidth=2 softtabstop=2
-    autocmd Filetype javascript.jsx setlocal tabstop=2 shiftwidth=2 softtabstop=2
-endif
-
-
-autocmd BufRead,BufNewFile riemann.config setlocal filetype=clojure
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
