@@ -218,6 +218,8 @@ let g:CommandTMaxFiles=30000
 " Ctrl P
 """""""""""""""
 let g:ctrlp_custom_ignore = 'node_modules'
+let g:ctrlp_max_files = 80000
+let g:ctrlp_max_depth = 12
 nnoremap <C-b> :CtrlPBuffer<CR>
 
 """""""""""""""""""""
