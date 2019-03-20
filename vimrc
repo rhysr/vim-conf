@@ -31,6 +31,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/groovyindent-unix'
 Plug 'vim-scripts/taglist.vim'
 Plug 'w0rp/ale'
+Plug 'chr4/nginx.vim'
 
 
 call plug#end()
