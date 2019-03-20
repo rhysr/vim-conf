@@ -13,6 +13,7 @@ Plug 'honza/vim-snippets'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'majutsushi/tagbar'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'pld-linux/vim-syntax-vcl', { 'for': 'varnish' }
@@ -175,21 +176,10 @@ endfunction
 "      Plugins
 """"""""""""""""""""""
 
-" Taglist
-""""""""""
-nnoremap <silent> <F8> :TlistToggle<CR>
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Sort_Type = "name"
-if has("autocmd")
-    autocmd BufRead,BufNewFile $HOME/repos/*,/var/repos/* let tlist_php_settings = 'php;c:class;f:function;d:constant'
-    " autocmd BufRead,BufNewFile $HOME/repos/* let Tlist_Ctags_Cmd = 'ctags --options=$HOME/.vim/ctags'
-    autocmd BufWritePost $HOME/repos/*,/var/repos/* :TlistUpdate
-    autocmd BufRead,BufNewFile $HOME/repos/logstash-conf/components/*conf set ft=logstash
-    autocmd BufRead,BufNewFile $HOME/repos/**/Jenkinsfile set ft=groovy
-    autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
-
-endif
+" Tagbar
+"""""""""""""""
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_left=1
 
 " BufExplorer
 """"""""""""""
