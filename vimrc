@@ -145,9 +145,9 @@ map <C-l> <C-w>l
 """"""""""""""
 
 if has ("autocmd")
-    autocmd BufWritePre *.php,*.js,*.twig,*.pp,*.rb,*.jade,*.tf :call Preserve("%s/\\s\\+$//e")
+    autocmd BufWritePre *.php,*.js,*.twig,*.pp,*.rb,*.jade,*.tf,*.md,*.sh,*.yml,*.yaml,Dockerfile* :call Preserve("%s/\\s\\+$//e")
     autocmd BufWritePre $HOME/repos/*,/var/repos/* :call Preserve("%s/\\s\\+$//e")
-    autocmd BufWritePre *.clj :call Preserve("%s/\\s\\+$//e")
+    autocmd BufWritePre *.clj,*.gradle,*.groovy :call Preserve("%s/\\s\\+$//e")
     autocmd FileType diff let b:noStripWhitespace=1
 endif
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
