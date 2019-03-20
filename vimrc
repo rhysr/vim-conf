@@ -83,9 +83,6 @@ nnoremap g# g#zz
 " hide search highlights
 nnoremap <silent> <Leader>/ :nohlsearch<CR>
 
-" spell check git commit messages
-autocmd FileType gitcommit setlocal spell
-
 " allow reading editor config from file
 set nocompatible 
 set modeline 
