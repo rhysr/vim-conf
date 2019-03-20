@@ -15,6 +15,7 @@ Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'honza/vim-snippets'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'leafgarland/typescript-vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'majutsushi/tagbar'
 Plug 'mxw/vim-jsx'
