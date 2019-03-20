@@ -1,3 +1,6 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
