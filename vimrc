@@ -33,6 +33,7 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'w0rp/ale'
 Plug 'chr4/nginx.vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
+Plug 'udalov/kotlin-vim'
 
 
 call plug#end()
