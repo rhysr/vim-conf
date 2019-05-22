@@ -32,6 +32,7 @@ Plug 'vim-scripts/groovyindent-unix'
 Plug 'vim-scripts/taglist.vim'
 Plug 'w0rp/ale'
 Plug 'chr4/nginx.vim'
+Plug 'martinda/Jenkinsfile-vim-syntax'
 
 
 call plug#end()
