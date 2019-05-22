@@ -110,6 +110,7 @@ if has("autocmd")
     augroup filetypedetect
         au! BufRead,BufNewFile *.phtml setfiletype php
         au! BufRead,BufNewFile riemann.config setlocal filetype=clojure
+        au! BufRead,BufNewFile Vagrantfile setlocal filetype=ruby
     augroup END
 endif
 
