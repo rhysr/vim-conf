@@ -35,7 +35,7 @@ Plug 'chr4/nginx.vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'udalov/kotlin-vim'
 Plug 'ludovicchabant/vim-gutentags'
-
+Plug 'vim-scripts/vim-gradle'
 
 call plug#end()
 
