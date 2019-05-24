@@ -178,6 +178,10 @@ nnoremap <C-b> :CtrlPBuffer<CR>
 " ALE
 """""""""
 let g:ale_lint_delay=1000
+let g:ale_pattern_options = {
+\   'node_modules/*': {'ale_enabled': 0}
+\}
+
 
 """""""""""""""""""""
 "      Mess
