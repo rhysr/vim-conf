@@ -52,7 +52,7 @@ set expandtab
 
 set cindent        "indent inside braces basically
 set smartindent
-set autoindent 
+set autoindent
 set history=1000
 
 " command tab completion
@@ -87,8 +87,8 @@ nnoremap g# g#zz
 nnoremap <silent> <Leader>/ :nohlsearch<CR>
 
 " allow reading editor config from file
-set nocompatible 
-set modeline 
+set nocompatible
+set modeline
 set modelines=1
 
 """"""""""""""""""""
