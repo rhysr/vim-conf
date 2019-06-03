@@ -8,34 +8,23 @@ Plug 'bogado/file-line'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
 Plug 'garbas/vim-snipmate'
-Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja' }
 Plug 'godlygeek/tabular'
-Plug 'groenewege/vim-less', { 'for': 'lessc' }
-Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'honza/vim-snippets'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'leafgarland/typescript-vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'majutsushi/tagbar'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
-Plug 'pld-linux/vim-syntax-vcl', { 'for': 'varnish' }
-Plug 'robbles/logstash.vim'
-Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
-Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'vim-scripts/groovyindent-unix'
 Plug 'vim-scripts/taglist.vim'
 Plug 'w0rp/ale'
-Plug 'chr4/nginx.vim'
-Plug 'martinda/Jenkinsfile-vim-syntax'
-Plug 'udalov/kotlin-vim'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'vim-scripts/vim-gradle'
+
+" language plugins
+Plug 'sheerun/vim-polyglot'
+Plug 'robbles/logstash.vim'
 
 call plug#end()
 
@@ -193,7 +182,7 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 " https://stackoverflow.com/questions/26518938/vim-wrong-syntax-highlighting-in-groovy#comment66713285_26525247
-syn region groovyString           start='/[^ \*/]'  end='/' contains=groovySpecialChar,groovyRegexChar,groovyELExpr
+"syn region groovyString           start='/[^ \*/]'  end='/' contains=groovySpecialChar,groovyRegexChar,groovyELExpr
 
 " https://stackoverflow.com/questions/4331776/change-vim-swap-backup-undo-file-name
 set dir=~/.vimswap//,/var/tmp//,/tmp//,.
