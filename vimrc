@@ -21,7 +21,6 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/taglist.vim'
 Plug 'w0rp/ale'
-Plug 'ludovicchabant/vim-gutentags'
 
 " language plugins
 Plug 'sheerun/vim-polyglot'
