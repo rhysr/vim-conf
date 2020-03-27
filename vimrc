@@ -11,8 +11,8 @@ Plug 'garbas/vim-snipmate'
 Plug 'godlygeek/tabular'
 Plug 'honza/vim-snippets'
 Plug 'jlanzarotta/bufexplorer'
-Plug 'kien/rainbow_parentheses.vim'
 Plug 'leafoftree/vim-vue-plugin'
+Plug 'luochen1990/rainbow'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'majutsushi/tagbar'
 Plug 'tomtom/tlib_vim'
@@ -177,10 +177,7 @@ let g:ale_pattern_options = {
 """""""""""""""""""""
 "      Mess
 """"""""""""""""""""
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+let g:rainbow_active = 1
 
 " https://stackoverflow.com/questions/26518938/vim-wrong-syntax-highlighting-in-groovy#comment66713285_26525247
 "syn region groovyString           start='/[^ \*/]'  end='/' contains=groovySpecialChar,groovyRegexChar,groovyELExpr
